@@ -45,7 +45,7 @@ export default function About() {
                   <Row label="Status" value="Open to Full-Time Roles" />
                   <Row label="Email" value={profile.email} />
                   <Row label="Phone" value={profile.phone} />
-                  {/* Removed the wrong "Address" that was using profile.dob */}
+                  <Row label="DOB" value={profile.dob} />
                   <Row label="Address" value={profile.address} multiline />
                 </div>
               </div>
