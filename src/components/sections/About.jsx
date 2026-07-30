@@ -37,7 +37,7 @@ export default function About() {
                 <p className="text-primary-300 text-sm font-medium">{profile.role}</p>
                 <p className="text-white/40 text-sm mt-1">{profile.tagline}</p>
 
-                {/* Info rows – stack on very small screens, side-by-side on larger */}
+                {/* Info rows */}
                 <div className="mt-5 sm:mt-6 space-y-1 text-sm">
                   <Row label="Location" value={profile.location} />
                   <Row label="Experience" value="4+ Years" />
@@ -120,14 +120,10 @@ export default function About() {
 
 function Row({ label, value, multiline = false }) {
   return (
-    <div
-      className={`flex flex-col xs:flex-row xs:items-start justify-between gap-1 xs:gap-4 py-2.5 border-b border-white/10 last:border-0 ${
-        multiline ? "items-start" : ""
-      }`}
-    >
+    <div className="flex flex-col gap-0.5 py-2.5 border-b border-white/10 last:border-0 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
       <span className="text-white/40 shrink-0 text-xs sm:text-sm">{label}</span>
       <span
-        className={`text-white/80 font-medium text-xs sm:text-sm text-left xs:text-right break-words ${
+        className={`text-white/80 font-medium text-sm break-words sm:text-right ${
           multiline ? "leading-relaxed" : ""
         }`}
       >
