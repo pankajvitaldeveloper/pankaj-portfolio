@@ -189,25 +189,6 @@ Weather application using a public REST API.
 - End-to-end development experience
 - React + MERN + Laravel expertise
 
-## 📱 Contact
-
-**Pankaj Kumar Mahto**
-
-Full Stack Developer  
-MERN Stack • React • Laravel
-
-📧 Email: `pankajkumardeveloper0@gmail.com`
-
-📞 Phone: `+91 9315370159`
-
-📍 Location: New Delhi, India
-
-## 🔗 Links
-
-- Portfolio: [Add your live portfolio URL]
-- LinkedIn: [Add your LinkedIn URL]
-- GitHub: [Add your GitHub URL]
-
 ## 💻 Run Locally
 
 Clone the repository:
