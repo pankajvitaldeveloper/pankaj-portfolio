@@ -114,25 +114,25 @@ export default function Navbar() {
       <AnimatePresence>
         {open && (
           <>
-            {/* Backdrop – closes menu on tap */}
+            {/* Dark backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 top-0 z-40 bg-black/60 lg:hidden"
+              className="fixed inset-0 z-40 bg-black/70 lg:hidden"
               onClick={() => setOpen(false)}
             />
 
-            {/* Menu panel */}
+            {/* Menu panel – solid background so content doesn't show through */}
             <motion.div
-              initial={{ opacity: 0, y: -12 }}
+              initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -12 }}
-              transition={{ duration: 0.25, ease: "easeOut" }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.22, ease: "easeOut" }}
               className="absolute left-4 right-4 top-full mt-2 z-50 lg:hidden"
             >
-              <div className="glass rounded-2xl border border-white/10 shadow-xl overflow-hidden">
+              <div className="rounded-2xl border border-white/10 bg-[#0b1220]/95 backdrop-blur-xl shadow-2xl overflow-hidden">
                 <ul className="flex flex-col p-3 gap-1">
                   {navLinks.map((link) => (
                     <li key={link.href}>
