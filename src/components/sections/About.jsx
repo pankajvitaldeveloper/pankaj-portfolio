@@ -38,7 +38,7 @@ export default function About() {
   <Row label="Status" value="Open to Full-Time Roles" />
   <Row label="Email" value={profile.email} />
   <Row label="Phone" value={profile.phone} />
-  <Row label="Address" value={profile.dob} />
+  <Row label="DOB" value={profile.dob} />
 
   <div className="flex items-start justify-between gap-6 py-3 border-b border-white/10">
     <span className="text-gray-400 shrink-0">Address</span>
