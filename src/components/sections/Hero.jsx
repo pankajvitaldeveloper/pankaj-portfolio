@@ -11,8 +11,8 @@ export default function Hero() {
   const typed = useTypingEffect(profile.roles, { typeSpeed: 90, deleteSpeed: 45, delay: 1600 });
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center section-pad pt-32 pb-20">
-      <div className="absolute inset-0 -z-10 flex items-center justify-center">
+    <section id="home" className="relative min-h-screen flex items-center justify-center section-pad pt-32 pb-20 overflow-x-hidden">
+      <div className="absolute inset-0 -z-10 flex items-center justify-center overflow-hidden">
         <motion.div
           className="w-[600px] h-[600px] rounded-full blur-[120px] bg-primary-600/20"
           animate={{ scale: [1, 1.1, 1], opacity: [0.4, 0.6, 0.4] }}
